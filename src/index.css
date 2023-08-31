@@ -1,0 +1,13 @@
+.Container2{
+    display: flex;
+    justify-content: center;
+}
+button{
+    transition: background-color 2s ease-out 100ms;
+    border-color: black;
+    
+}
+button:hover{
+   background-color:aqua
+
+}
