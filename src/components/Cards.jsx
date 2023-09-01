@@ -34,6 +34,9 @@ const Cards =(props)=>{
                 
                 <p className="card-text">{props.texto}</p>
             </div>
+            <a href={props.link} target="_blank" rel="noopener noreferrer" >
+            <button className="btn btn-dark" >Link</button>
+            </a>
             <a  onClick={toggleFavorite}>
             {isFavorite ? <AiFillHeart />  : <AiOutlineHeart /> }
             </a>
