@@ -4,6 +4,7 @@ import Componente1 from './components/Contador'
 import OverviewComponent from './components/Overview'
 import CreateComponent from './components/Create'
 import ContentComponent from './components/Content'
+import Footer from './components/footer'
 import 'bootstrap'
 
 
@@ -43,6 +44,7 @@ function App() {
     </div>
   </div>
 </nav>
+
 
     {/*Cambio de vistas*/ }
     {currentView === 'OVERVIEW' && <OverviewComponent />}

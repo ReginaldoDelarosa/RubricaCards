@@ -1,4 +1,5 @@
 import Cards from './Cards'
+import Footer from './footer'
 import { useState,useEffect } from 'react'
 import img1 from '/src/assets/LK-99.png'
 import img2 from '/src/assets/tmnt.jpg'
@@ -63,24 +64,7 @@ const OverviewComponent = () => {
                     }   
                 </div>
     </div>
-       <footer>        
-        <div className='container-fluid'>
-            <div className='row bg-secondary text-white'>
-                    <div className="col-xs-12 col-md-6 col-lg-3">
-                        <p className='h3'>Columna</p>                            
-                    </div>
-                    <div className="col-xs-12 col-md-6 col-lg-3">
-                        <p >Columna</p>                            
-                    </div>
-                    <div className="col-xs-12 col-md-6 col-lg-3">
-                        <p>Columna</p>                    
-                    </div>
-                    <div className="col-xs-12 col-md-6 col-lg-3">
-                        <p>Columna</p>                            
-                    </div>
-            </div>
-        </div>
-        </footer>                 
+    <Footer/>
       
   </>
   )

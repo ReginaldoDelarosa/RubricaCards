@@ -9,6 +9,7 @@ const Cards =(props)=>{
 
     useEffect(() => {
         const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        
         setIsFavorite(favorites.includes(props.id));
       }, [props.id]);
   

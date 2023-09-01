@@ -1,4 +1,5 @@
 import ContentComponent from "./Content"
+import Footer from './footer'
 import { useState,useEffect } from 'react'
 import { generateNewId } from "./utils"
 import img1 from '/src/assets/LK-99.png'
@@ -64,7 +65,7 @@ const CreateComponent = () => {
 
     
     return(<>
-    <form onSubmit={handleCardCreation}>
+    <form onSubmit={handleCardCreation} style={{minHeight:"90vh"}}>
         <div className="row">
           <div className="col-md-4 row-md-6">
             <label htmlFor="title" className="form-label">Título</label>
@@ -98,6 +99,8 @@ const CreateComponent = () => {
         </div>
       </form>
     {currentView === 'CONTENT' && <ContentComponent />}
+
+    <Footer/>
     </>
         
     )

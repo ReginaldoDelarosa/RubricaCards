@@ -1,4 +1,5 @@
 import Cards from './Cards'
+import Footer from './footer'
 import { generateNewId } from "./utils"
 import { useState,useEffect } from 'react'
 import img1 from '/src/assets/LK-99.png'
@@ -117,7 +118,7 @@ const ContentComponent = () => {
       
 
     return (<>
-                <div className='container'>
+                <div className='container' style={{minHeight:"90vh"}}>
                 <select className="form-select" aria-label="Default select example" value={selectedType} onChange={handleTypeChange}>
                     <option value="">Todos los deportes</option>
                     <option value="motor">Motor</option>
@@ -144,6 +145,7 @@ const ContentComponent = () => {
                     }   
                 </div>
     </div>
+    <Footer/>
     </>)
     };
 
