@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import './components/App.css'
 import Componente1 from './components/Contador'
 import OverviewComponent from './components/Overview'
 import CreateComponent from './components/Create'
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-    <nav className="navbar navbar-expand-lg bg-secondary ">
+    <nav className="navbar navbar-expand-lg ">
   <div className="container-fluid">
     <a className="navbar-brand text-white" href="#">Navbar</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
