@@ -2,7 +2,7 @@ import Cards from './Cards'
 import Footer from './footer'
 import { generateNewId } from "./utils"
 import { useState,useEffect } from 'react'
-import img5 from '/src/assets/formula1.jpg'
+import img5 from '/src/assets/Formula1.jpg'
 import img6 from '/src/assets/MotoGP.jpg'
 import img7 from '/src/assets/Rally.jpg'
 import img8 from '/src/assets/Ajedrez.jpg'
