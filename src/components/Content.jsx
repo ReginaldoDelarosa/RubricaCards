@@ -2,85 +2,88 @@ import Cards from './Cards'
 import Footer from './footer'
 import { generateNewId } from "./utils"
 import { useState,useEffect } from 'react'
-import img1 from '/src/assets/LK-99.png'
-import img2 from '/src/assets/tmnt.jpg'
-import img3 from '/src/assets/hoynofio.jpg'
-import img4 from '/src/assets/un-platano-revolver.jpg'
-import img5 from '/src/assets/abuelaTactica.jpg'
-import img6 from '/src/assets/ratas-696x438.png'
+import img5 from '/src/assets/formula1.jpg'
+import img6 from '/src/assets/MotoGP.jpg'
+import img7 from '/src/assets/Rally.jpg'
+import img8 from '/src/assets/Ajedrez.jpg'
+import img9 from '/src/assets/Domino.jpg'
+import img10 from '/src/assets/Monopoly.jpg'
+import img11 from '/src/assets/Basket.jpg'
+import img12 from '/src/assets/Futbol.jpg'
+import img13 from '/src/assets/Volleyball.jpg'
 
 const cardsD =[
   {
     id:5,
-    title: "LK-99|",
-    texto:"es un compuesto policristalino negro-grisáceo, obtenido mediante el dopaje de apatito de plomo con cobre. Un equipo de la Universidad de Corea liderado por Sukbae Lee (이석배) y Ji-Hoon Kim (김지훈) comenzó a evaluar este material como un posible superconductor a partir de 1999.  ",
-    image: img1,
-    link:"https://es.wikipedia.org/wiki/LK-99",
+    title: "Formula 1",
+    texto:"El Campeonato Mundial de Fórmula 1 de la FIA, más conocido como Fórmula 1, F1 o Fórmula Uno, es la principal competición de automovilismo internacional y el campeonato de deportes de motor más popular y prestigioso del mundo. La entidad que la dirige es la Federación Internacional del Automóvil.",
+    image: img5,
+    link:"https://www.formula1.com/en/page.what-is-f1.html",
     type:'motor'
   },
   {
     id:6,
-    title: "LK-99|",
-    texto:"es un compuesto policristalino negro-grisáceo, obtenido mediante el dopaje de apatito de plomo con cobre. Un equipo de la Universidad de Corea liderado por Sukbae Lee (이석배) y Ji-Hoon Kim (김지훈) comenzó a evaluar este material como un posible superconductor a partir de 1999.  ",
-    image: img1,
-    link:"https://es.wikipedia.org/wiki/LK-99",
+    title: "Moto GP",
+    texto:"El Campeonato Mundial de Motociclismo pero que popularmente recibe el nombre de la categoría principal de MotoGP, es la máxima competición mundial de motociclismo de velocidad.",
+    image: img6,
+    link:"https://www.motogp.com/es",
     type:'motor'
   },
   {
     id:7,
-    title: "LK-99|",
-    texto:"es un compuesto policristalino negro-grisáceo, obtenido mediante el dopaje de apatito de plomo con cobre. Un equipo de la Universidad de Corea liderado por Sukbae Lee (이석배) y Ji-Hoon Kim (김지훈) comenzó a evaluar este material como un posible superconductor a partir de 1999.  ",
-    image: img1,
-    link:"https://es.wikipedia.org/wiki/LK-99",
+    title: "Rally",
+    texto:"Un rally​ es una competición automovilística que se disputa en carreteras abiertas al tráfico pero que se cierran especialmente para su celebración. A la parte cerrada al tránsito rodado se le denomina «tramo», que es el lugar donde cada participante compite y que debe completar en el menor tiempo posible. El ganador es aquel que, con la suma de los tiempos de todos los tramos, haya empleado menos para completar la carrera.",
+    image: img7,
+    link:"https://es.wikipedia.org/wiki/Campeonato_Mundial_de_Rally",
     type:'motor'
   },
   {
     id:8,
-    title: "¿Cuál es la Tortuga Ninja más fuerte?|",
-    texto:"Las Tortugas Ninja llevan entre nosotros desde 1984, con el cómic de Kevin Eastman y Peter Laird que fue concebido como un producto independiente de tirada limitada.",
-    image: img2,
-    link:"https://vandal.elespanol.com/noticia/r21747/cual-es-la-tortuga-ninja-mas-fuerte-leonardo-responde-al-dilema-39-anos-despues",
+    title: "Ajedrez",
+    texto:"El ajedrez es un juego de tablero entre dos contrincantes en el que cada uno dispone al inicio de dieciséis piezas móviles que se colocan sobre un tablero​ dividido en sesenta y cuatro casillas o escaques.",
+    image: img8,
+    link:"https://es.wikipedia.org/wiki/Ajedrez",
     type:'mesa'
   },
   {
     id:9,
-    title: "¿Cuál es la Tortuga Ninja más fuerte?|",
-    texto:"Las Tortugas Ninja llevan entre nosotros desde 1984, con el cómic de Kevin Eastman y Peter Laird que fue concebido como un producto independiente de tirada limitada.",
-    image: img2,
-    link:"https://vandal.elespanol.com/noticia/r21747/cual-es-la-tortuga-ninja-mas-fuerte-leonardo-responde-al-dilema-39-anos-despues",
+    title: "Dominó",
+    texto:"El dominó es un juego de mesa en el que se juegan y emplean unas fichas rectangulares, generalmente blancas por la cara y negras por el envés, usualmente hay de diferentes colores, aunque existen muchas variantes.",
+    image: img9,
+    link:"https://es.wikipedia.org/wiki/Domin%C3%B3",
     type:'mesa'
   },
   {
     id:10,
-    title: "¿Cuál es la Tortuga Ninja más fuerte?|",
-    texto:"Las Tortugas Ninja llevan entre nosotros desde 1984, con el cómic de Kevin Eastman y Peter Laird que fue concebido como un producto independiente de tirada limitada.",
-    image: img2,
-    link:"https://vandal.elespanol.com/noticia/r21747/cual-es-la-tortuga-ninja-mas-fuerte-leonardo-responde-al-dilema-39-anos-despues",
+    title: "Monopoly",
+    texto:"Monopoly es un juego de mesa basado en el intercambio y la compraventa de bienes raíces (normalmente, inspirados en los nombres de las calles de una determinada ciudad), hoy es propiedad de la empresa estadounidense Hasbro.",
+    image: img10,
+    link:"https://es.wikipedia.org/wiki/Monopoly",
     type:'mesa'
   },
   {
     id:11,
-    title: "Hoy no fio mañana si|",
-    texto:"Muchos son los comercios que lucen un cartel en el que reza el siguiente mensaje ‘Hoy no se fía, mañana sí’ (o alguno similar) en el que se advierte a los clientes que en aquel establecimiento hay que pagar en el acto lo comprado o consumido y no se puede dejar a deber.",
-    image: img3,
-    link:"https://blogs.20minutos.es/yaestaellistoquetodolosabe/de-donde-surge-la-expresion-hoy-no-se-fia-manana-si/",
+    title: "Baloncesto",
+    texto:"El baloncesto es un deporte de equipo, jugado entre dos conjuntos de cinco jugadores cada uno en cuatro períodos de cuartos. El objetivo del equipo es anotar puntos introduciendo un balón por la canasta, un aro a 3,05 metros sobre la superficie de la pista de juego del que cuelga una red. La puntuación por cada canasta o cesta es de dos o tres puntos, dependiendo de la posición desde la que se efectúa el tiro a canasta, o de uno, si se trata de un tiro libre por una falta de un jugador contrario. El equipo ganador es el que obtiene el mayor número de puntos.",
+    image: img11,
+    link:"https://es.wikipedia.org/wiki/Baloncesto",
     type:'equipo'
 
   },
   {
     id:12,
-    title: "Hoy no fio mañana si|",
-    texto:"Muchos son los comercios que lucen un cartel en el que reza el siguiente mensaje ‘Hoy no se fía, mañana sí’ (o alguno similar) en el que se advierte a los clientes que en aquel establecimiento hay que pagar en el acto lo comprado o consumido y no se puede dejar a deber.",
-    image: img3,
-    link:"https://blogs.20minutos.es/yaestaellistoquetodolosabe/de-donde-surge-la-expresion-hoy-no-se-fia-manana-si/",
+    title: "Futbol",
+    texto:"El fútbol es un deporte de equipo jugado entre dos conjuntos de once jugadores cada uno, mientras los árbitros se ocupan de que las normas se cumplan correctamente. Es, ampliamente, considerado el deporte más popular del mundo, pues lo practican unas 270 millones de personas.",
+    image: img12,
+    link:"https://es.wikipedia.org/wiki/F%C3%BAtbol",
     type:'equipo'
   },
   {
     id:13,
-    title: "Hoy no fio mañana si|",
-    texto:"Muchos son los comercios que lucen un cartel en el que reza el siguiente mensaje ‘Hoy no se fía, mañana sí’ (o alguno similar) en el que se advierte a los clientes que en aquel establecimiento hay que pagar en el acto lo comprado o consumido y no se puede dejar a deber.",
-    image: img3,
-    link:"https://blogs.20minutos.es/yaestaellistoquetodolosabe/de-donde-surge-la-expresion-hoy-no-se-fia-manana-si/",
+    title: "Voleibol",
+    texto:"El voleibol es un deporte que se juega con una pelota y en el que dos equipos, integrados por seis jugadores cada uno, se enfrentan sobre una área de juego separada por una red central. El objetivo del juego es pasar el balón por encima de la red, logrando que llegue al suelo del campo contrario mientras el equipo adversario intenta impedir simultáneamente que lo consiga, forzándolo a errar en su intento. Surge una fase de ataque en un equipo cuando intenta que el balón toque el suelo del campo contrario mientras que en el otro equipo surge una fase de defensa intentando impedirlo.",
+    image: img13,
+    link:"https://es.wikipedia.org/wiki/Voleibol",
     type:'equipo'
   }
 ]

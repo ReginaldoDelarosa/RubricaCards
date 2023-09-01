@@ -6,34 +6,69 @@ import img1 from '/src/assets/LK-99.png'
 import img2 from '/src/assets/tmnt.jpg'
 import img3 from '/src/assets/hoynofio.jpg'
 import img4 from '/src/assets/un-platano-revolver.jpg'
-import img5 from '/src/assets/abuelaTactica.jpg'
-import img6 from '/src/assets/ratas-696x438.png'
+import img5 from '/src/assets/formula1.jpg'
+import img6 from '/src/assets/MotoGP.jpg'
+import img7 from '/src/assets/Rally.jpg'
+import img8 from '/src/assets/Ajedrez.jpg'
+import img9 from '/src/assets/Domino.jpg'
+import img10 from '/src/assets/Monopoly.jpg'
+import img11 from '/src/assets/Basket.jpg'
+import img12 from '/src/assets/Futbol.jpg'
+import img13 from '/src/assets/Volleyball.jpg'
 
 const selectImages = [
-    {
-        name:"Imagen 1",
-        image: img1,
-    },
-    {
-        name:"Imagen 2",
-        image: img2,
-    },
-    {
-        name:"Imagen 3",
-        image: img3,
-    },
-    {
-        name:"Imagen 4",
-        image: img4,
-    },
-    {
-        name:"Imagen 5",
-        image: img5,
-    },
-    {
-        name:"Imagen 6",
-        image: img6,
-    },
+  {
+    name:"Imagen 1",
+    image: img1,
+},
+{
+    name:"Imagen 2",
+    image: img2,
+},
+{
+    name:"Imagen 3",
+    image: img3,
+},
+{
+    name:"Imagen 4",
+    image: img4,
+},
+{
+    name:"Formula 1",
+    image: img5,
+},
+{
+    name:"Moto GP",
+    image: img6,
+},
+{
+    name:"Rally",
+    image: img7,
+},
+{
+    name:"Ajedrez",
+    image: img8,
+},
+{
+    name:"Domino",
+    image: img9,
+},
+{
+    name:"Monopoly",
+    image: img10,
+},
+{
+    name:"Baloncesto",
+    image: img11,
+},
+{
+    name:"Futbol",
+    image: img12,
+},
+{
+    name:"Voleibol",
+    image: img13,
+},
     
 ]
 const CreateComponent = () => {
